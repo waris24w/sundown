@@ -1,0 +1,125 @@
+@media(max-width: 480px) {
+  nav img{
+    transform: scale(0.7);
+  }
+  nav{
+    padding: 0vw 0vw;
+  }
+  .navText{
+    display: none;
+  }
+  .mobile-menu{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  .text2 h1{
+    font-size: 18vw;
+  }
+  .text1 p{
+    width: 92vw;
+    font-size: 6.4vw;
+  }
+  .hero-text{
+    flex-direction: column-reverse;
+  }
+  .moving-text h1{
+    font-size: 12vw;
+  }
+  .dot{
+    width: 25px;
+    height: 25px;
+  }
+  .page1 video{
+    object-fit: cover;
+    object-position: center;
+    height: 70vh;
+  }
+  .page1{
+        padding-bottom: 14vw;
+  }
+  .page2-text{
+    flex-direction: column;
+    padding-top: 15vw;
+  }
+  .page2-text h3{
+    width: 100%;
+    font-size: 8vw;
+  }
+  .page2-box img{
+     width: 52vw;
+  }
+  .page2-box p {
+      width: 80%;
+  }
+  .page2-box{
+    width: 70%;
+  }
+  .page2{
+    padding-bottom: 74vw;
+  }
+  .page2-circle{
+    width: 40vw;
+    height: 40vw;
+    top: 25%;
+    left: 25%;
+  }
+  .warp{
+    flex-direction: column;
+  }
+  .warp-text{
+    width: 90%;
+  }
+  .warp-H1 h1{
+    font-size: 9.5vw;
+  }
+  .warp-ps p{
+    width: 75vw;
+    font-size: 4vw;
+
+  }
+
+    .warp-img {
+       display: none;
+    }
+    .project-btn{
+      width: 36vw;
+
+    }
+    .project-btn a{
+      font-size: 4vw;
+    }
+    .fixed-img{
+      width: 38vw;
+      height: 48vw;
+      left: 33%;
+      top: 28%;
+    }
+    .element h1{
+      font-size: 4.5vw;
+    }
+    .element{
+      height: 17vh;
+    }
+    .fh1 h2{
+      font-size: 5vw;
+    }
+    .page6{
+      height: 47vh;
+    }
+    footer{
+      height: 55vh;
+    }
+    .femail{
+      width: 43%;
+    }
+    .femail p{
+      font-size: 3.2vw;
+    }
+    .femail input{
+      width: 38vw;
+    }
+    .loader h1{
+      font-size: 8vw;
+    }
+}

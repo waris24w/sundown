@@ -1,0 +1,641 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+.main{
+	/*background-color: black;*/
+	position: relative;
+	z-index: 10;
+}
+
+.page1{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #EFEAE3;
+	padding: 1vw 2vw;
+}
+nav{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2vw 2vw;
+}
+.navText{
+	display: flex;
+	justify-content: space-evenly;
+	gap: 20px;
+	position: relative;
+
+}
+.navText h3{
+	padding: 1vw 1.5vw;
+	border:1px solid #0000009c;
+	border-radius: 20px;
+	position: relative;
+	font-family: sans-serif;
+	overflow: hidden;
+
+}
+.navText h3::after{
+	content: "";
+	width: 120%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -100%;
+	background-color: black;
+	border-radius: 50%;
+	transition: all ease 0.3s;
+	overflow: hidden;
+
+}
+.navText h3:hover::after{
+	bottom: 0;
+	border-radius: 0;
+	
+}
+.navText h3 a{
+	z-index: 9;
+	position: relative;
+	text-decoration: none;
+	color: black;
+}
+.navText h3:hover a{
+	color: white;
+}
+
+.hero-text{
+	width: 100%;
+	height: 70vh;
+	    display: flex;
+	    justify-content: space-between;
+	    /*padding: 0px 3.5vw;*/
+	    padding-bottom: 2vw;
+	    align-items: flex-end;
+	    border-bottom:1px solid #00000026;
+
+}
+
+.text1 p{
+	font-family: neu;
+	width: 28vw;
+	font-size: 2.4vw;
+	font-weight: bolder;
+}
+.text2 h1{
+	font-family: neu;
+	font-size: 10vw;
+	line-height: .8;
+	font-weight: 900;
+	text-align: right;
+}
+
+.page1 video{
+	width: 100%;
+	border-radius: 20px;
+	margin-top: 3vw;
+	position: relative;
+	
+}
+
+.hero-anime{
+	position: absolute;
+	 width: 46vw;
+	 height: 36vw;
+	 right: 0;
+	 top: 79vh;
+}
+
+.anime1{
+	background-color: #FE320A;
+	  height: 100%;
+	  width: 100%;
+	  border-top-left-radius: 50%;
+	  border-bottom-left-radius: 50%;
+	  filter: blur(25px);
+	  position: absolute;
+}
+.anime2{
+	background: linear-gradient(#FE320A, #fe3f0a);
+	   height: 30vw;
+	   width: 30vw;
+	   border-radius: 50%;
+	   position: absolute;
+	   animation: anime1 5s linear alternate infinite;
+	   filter: blur(25px);
+}
+.anime3{
+	background: linear-gradient(#FE320A, #fe3f0a);
+	    height: 30vw;
+	    position: absolute;
+	    width: 30vw;
+	    border-radius: 50%;
+	    filter: blur(25px);
+	    animation: anime 4s alternate infinite;
+
+}
+
+@keyframes anime{
+	to{
+		transform: translate(10%, -10%);
+	}	
+	from{
+		transform: translate(0%, 5%);
+	}	
+}
+
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+.page2{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #EFEAE3;
+	position: relative;
+}
+.cont{
+	white-space: nowrap;
+	display: inline-block;
+	animation: move 10s linear infinite;
+}
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+.moving-text{
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+.moving-text h1{
+	font-size: 10vw;
+	font-family: neu;
+	display: inline-block;
+}
+.dot{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #FE320A;
+	margin: 1vw 2vw;
+
+}
+
+@keyframes move{
+	from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(-100%);
+	}
+
+}
+.page2-text{
+	background-color: #EFEAE3 ;
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 1vw 4vw;
+	align-items: center;
+	
+}
+.page2-text h3{
+	width: 50%;
+	font-size: 3vw;
+	font-family: neu;
+	position: relative;
+	z-index: 9;
+
+}
+.page2-box{
+	width: 30%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: end;
+
+}
+.page2-box img{
+	width: 18vw;
+	border-radius: 20px;
+	margin: 0px auto;
+}
+.page2-box p{
+	width: 19vw;
+	margin: 0px auto;
+}
+.page2-circle{
+	width: 25vw;
+	height: 25vw;
+	background-color: orangered;
+	border-radius: 50%;
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	animation: animeSkew 4s alternate infinite;
+	filter: blur(20px);
+
+}
+@keyframes animeSkew{
+	to{
+		transform: translate(10%, -10%) skew(0);
+	}	
+	from{
+		transform: translate(0%, 5%) skew(13deg);
+	}	
+}
+
+.page3{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #EFEAE3;
+}
+
+.element{
+	width: 100%;
+	height: 20vh;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 2vw;
+	overflow: hidden;
+	border-bottom: 1px solid #0000004d;
+	
+}
+.element:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgb(255, 152, 49);
+	top: -100%;
+	left: 0;
+	transition: all .2s linear;
+}
+.element:hover::after{
+	top: 0;
+}
+.element h1{
+	font-size: 3.6vw;
+	font-family: neu;
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+}
+.element-text{
+	text-align: right;
+	font-family: sans-serif;
+}
+.element-text h4{
+	position: relative;
+	z-index: 3;
+}
+.light-h3 {
+	opacity: 0.5;
+}
+.fixed-img{
+	width: 25vw;
+	height: 28vw;
+	border-radius: 20px;
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	z-index: 90;
+	position: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.project-btn::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -100%;
+	background-color: black;
+	border-radius: 50%;
+	transition: all ease 0.3s;
+	z-index: 1;
+}
+
+.project-btn h1 {
+    position: relative; 
+    z-index: 2; 
+}
+
+.project-btn{
+	margin-top: 3vw;
+	margin-left: 4vw;
+	position: relative; 
+	width: 12vw;
+	padding: 0.3vw 1vw;
+	border: 1px solid;
+	border-radius: 20px;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
+}
+.project-btn a{
+	color: black;
+	font-size: 1vw;
+	text-decoration: none;
+    position: relative; 
+    z-index: 7;
+}
+.project-btn:hover a{
+	color: white;
+}
+
+.project-btn:hover::after{
+	bottom: 0;
+	border-radius: 0px;
+}
+
+.page4{
+	width: 100%;
+	height: 100vh;
+	background-color: #EFEAE3;
+	padding-top: 3vw;
+}
+.warp{
+	width: 90%;
+	height: 90%;
+	border-radius: 20px;
+	margin: 0px auto;
+	/*border: 1px solid;*/
+	display: flex;
+	background-color: black;
+}
+.warp-text{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 10vw 10vw;
+}
+.warp-img{
+	width: 50%;
+	height: 100%;
+}
+.warp-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+}
+.warp-H1 h1{
+	font-family: neu;
+	font-size: 4.5vw;
+	color: white;
+	opacity: .7;
+	cursor: pointer;
+}
+.warp-ps p{
+	width: 30vw;
+	color: white;
+	font-family: sans-serif;
+}
+
+.page5{
+	width: 100%;
+	height: 70vh;
+	background-color: #EFEAE3;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	gap: 27px;
+	 padding: 1vw 3vw
+}
+.brands{
+	width: 100%;
+}
+.company{
+	width: 100%;
+	padding: 2vw 2vw;
+}
+
+
+.page6{
+	width: 100%;
+	height: 100vh;
+}
+
+footer{
+	position: fixed;
+	z-index: 9;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	left: 0%;
+	background-color: orangered;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	color: white;
+}
+footer h1{
+	font-size: 22vw;
+	font-family: neu;
+	margin: 0px auto;
+	position: relative;
+	z-index: 10;
+}
+.fh1{
+	width: 20%;
+}
+.fh1 h2{
+	font-size: 3vw;
+	font-family: neu;
+}
+.femail{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 1vw 2vw;
+}
+.warper{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 2vw 5vw;
+}
+
+.femail input{
+	width: 200px;
+	padding: 1vw 2vw;
+	border:transparent;
+	background-color: transparent;
+	border-bottom: 1px solid;
+}
+
+.femail input::placeholder{
+	color: white;
+	font-family: sans-serif;
+	text-align: left;
+}
+.femail p{
+	font-size: 1.2vw;
+	font-family: sans-serif;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background-color: #b5b5031f;
+    border-radius: 20px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 70%;
+  }
+
+.mobile-menu{
+	display: none;
+	    width: 16vw;
+	    padding: 4vw 3vw;
+	    height: 5vw;
+	    border-radius: 20px;
+	    border: 1px solid;
+}
+  .page5-dot{
+  	width: 8px;
+  	height: 8px;
+  	background-color: orangered;
+  	border-radius: 50%;
+  	margin-left: 2vw;
+  }
+  .page5-h1s{
+  	display: flex;
+  	gap: 10px;
+  	align-items: center;
+  	font-family: sans-serif;
+  }
+
+  .footer-bottom{
+  	width: 90vw;
+  	height: 140vh;
+  	background-color: black;
+  	position:absolute;
+  	top: 65%;
+  	left: 20%;
+  	transform: rotate(45deg);
+  	filter: blur(26px);
+  	animation:Skew 4s alternate infinite;
+  }
+
+  @keyframes Skew{
+  	to{
+  		transform:skew(0) rotate(22deg);
+  	}	
+  	from{
+  		transform:skew(13deg) rotate(23deg);
+  	}	
+  }
+
+  .loader{
+  	width: 100vw;
+  	height: 100vh;
+  	background-color: black;
+  	position: fixed;
+  	z-index: 999;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	transition: all 0.3s linear;
+  	top: 0;
+  }
+
+
+  .loader h1{
+  	color: transparent;
+  	font-size: 5vw;
+  	font-family: neu; /* Make sure this font is loaded */
+  	background: linear-gradient( to right ,orange, orangered);
+  	background-clip: text;
+  	animation: load 1s linear forwards;
+  	animation-delay: 1s;
+  	opacity: 0;
+  	position: absolute;
+  }
+
+  .loader h1:nth-child(2){
+  	animation-delay: 2s;
+  }
+  .loader h1:nth-child(3){
+  	animation-delay: 3s;
+  }
+
+  @keyframes load{
+  	0%{
+  		opacity: 0;
+  	}
+  	30%{ /* Fade in */
+  		opacity: 1;
+  	}
+  	70%{ /* Stay visible */
+  		opacity: 1;
+  	}
+  	100%{ /* Fade out */
+  		opacity: 0;
+  	}
+  }
+
+
+/* 
+.navTextw{
+	width: 100vw;
+	height: 40vh;
+	background-color: #EFEAE3;
+	position: relative;
+	top: 0;
+	color: black;
+} */
